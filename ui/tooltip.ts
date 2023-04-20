@@ -29,8 +29,8 @@ class Tooltip {
       reference.left + reference.width / 2 - this.root.offsetWidth / 2;
     // root.scrollTop should be 0 if scrollContainer !== root
     const top = reference.bottom + this.quill.root.scrollTop;
-    this.root.style.left = `${left + 100}px`;
-    this.root.style.top = `${top}px`;
+    this.root.style.left = '130px' /* `${left + 100}px` */;
+    this.root.style.top = '0' /* `${top}px` */;
     this.root.classList.remove('ql-flip');
     const containerBounds = this.boundsContainer.getBoundingClientRect();
     const rootBounds = this.root.getBoundingClientRect();
